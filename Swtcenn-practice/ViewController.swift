@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-        
+    
     @IBOutlet weak var celciumTextField: UITextField!
     @IBOutlet weak var farenheitTextField: UITextField!
     @IBOutlet weak var kelvinTextField: UITextField!
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func celciumTextFieldEditindDidChanged(_ sender: Any) {
         let celcium = Double(celciumTextField.text ?? "nil")
         if celcium != nil {
